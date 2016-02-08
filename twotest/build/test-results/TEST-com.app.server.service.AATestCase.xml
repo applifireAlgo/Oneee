@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.AATestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-08T13:05:05" hostname="2dd7cf7d7355" time="0.07">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.AATestCase" time="0.045"/>
+  <testcase name="test2Update" classname="com.app.server.service.AATestCase" time="0.011"/>
+  <testcase name="test3FindById" classname="com.app.server.service.AATestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.AATestCase" time="0.009"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-02-08 13:05:05.202--ClientSession(2006737429)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AA_M (aId, aaa, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A8CE6833-E744-4010-9990-C330A6E11261, 2147483647, 1, AAAAA, 2016-02-08 13:05:05.171, null, 2016-02-08 13:05:05.171, 1, 51000]
+[EL Fine]: sql: 2016-02-08 13:05:05.21--ClientSession(870420755)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT aId, aaa, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AA_M WHERE ((activeStatus = ?) AND (aId = ?))
+	bind => [1, A8CE6833-E744-4010-9990-C330A6E11261]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-08 13:05:05.213--ClientSession(1586969133)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT aId, aaa, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AA_M WHERE (aId = ?)
+	bind => [A8CE6833-E744-4010-9990-C330A6E11261]
+[EL Fine]: sql: 2016-02-08 13:05:05.214--ClientSession(1586969133)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--UPDATE ast_AA_M SET updatedBy = ?, versionId = ? WHERE ((aId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, A8CE6833-E744-4010-9990-C330A6E11261, 1]
+[EL Fine]: sql: 2016-02-08 13:05:05.22--ClientSession(1840664826)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT aId, aaa, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AA_M WHERE ((activeStatus = ?) AND (aId = ?))
+	bind => [1, A8CE6833-E744-4010-9990-C330A6E11261]
+[EL Fine]: sql: 2016-02-08 13:05:05.225--ClientSession(459447844)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT aId, aaa, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AA_M WHERE (aId = ?)
+	bind => [A8CE6833-E744-4010-9990-C330A6E11261]
+[EL Fine]: sql: 2016-02-08 13:05:05.227--ClientSession(459447844)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AA_M WHERE ((aId = ?) AND (versionId = ?))
+	bind => [A8CE6833-E744-4010-9990-C330A6E11261, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

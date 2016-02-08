@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.FdfdTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-08T13:05:07" hostname="2dd7cf7d7355" time="0.089">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.FdfdTestCase" time="0.058"/>
+  <testcase name="test2Update" classname="com.app.server.service.FdfdTestCase" time="0.014"/>
+  <testcase name="test3FindById" classname="com.app.server.service.FdfdTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="com.app.server.service.FdfdTestCase" time="0.01"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-02-08 13:05:07.073--ClientSession(509803289)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Fdfd_M (sd, sds, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4E47CCCF-DF54-415C-90BA-601D5A48D3FC, 5LLE9tNI92AyDlzXJgKnXGEHDDUYL2LQKknIns5yvI9yKzDDIh, 1, AAAAA, 2016-02-08 13:05:07.034, null, 2016-02-08 13:05:07.034, 1, 51000]
+[EL Fine]: sql: 2016-02-08 13:05:07.083--ClientSession(1395386361)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT sd, sds, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Fdfd_M WHERE ((activeStatus = ?) AND (sd = ?))
+	bind => [1, 4E47CCCF-DF54-415C-90BA-601D5A48D3FC]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-08 13:05:07.086--ClientSession(811512815)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT sd, sds, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Fdfd_M WHERE (sd = ?)
+	bind => [4E47CCCF-DF54-415C-90BA-601D5A48D3FC]
+[EL Fine]: sql: 2016-02-08 13:05:07.088--ClientSession(811512815)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--UPDATE ast_Fdfd_M SET sds = ?, updatedBy = ?, versionId = ? WHERE ((sd = ?) AND (versionId = ?))
+	bind => [YqVZHYPzMk5O0wpFGIdSFtYWX5un8MLRHFCT6y7pT1m1Qm9c4k, AAAAA, 2, 4E47CCCF-DF54-415C-90BA-601D5A48D3FC, 1]
+[EL Fine]: sql: 2016-02-08 13:05:07.096--ClientSession(127048642)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT sd, sds, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Fdfd_M WHERE ((activeStatus = ?) AND (sd = ?))
+	bind => [1, 4E47CCCF-DF54-415C-90BA-601D5A48D3FC]
+[EL Fine]: sql: 2016-02-08 13:05:07.103--ClientSession(1659223218)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--SELECT sd, sds, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Fdfd_M WHERE (sd = ?)
+	bind => [4E47CCCF-DF54-415C-90BA-601D5A48D3FC]
+[EL Fine]: sql: 2016-02-08 13:05:07.104--ClientSession(1659223218)--Connection(2117600973)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Fdfd_M WHERE ((sd = ?) AND (versionId = ?))
+	bind => [4E47CCCF-DF54-415C-90BA-601D5A48D3FC, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

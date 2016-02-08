@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON twotestdb.* TO 'two'@'%' IDENTIFIED BY 'two' WITH GRANT OPTION
